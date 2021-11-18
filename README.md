@@ -2,7 +2,7 @@
 
 >*Een marktplaats voor jong talent*
 
-*Do 18-11-2021:* Hier staan 'teh codez' in kader van Alliander's Innovathon voor het team 'Markplaats voor jong Talent'.
+*Do 18-11-2021:* Hier staat 'teh code' i.k.v. Alliander's Innovathon voor team 'Markplaats voor jong Talent'.
 
 <img src="mvt.web/plaatjes/plaatjes/../energietransitie2.jpg" width="700" float="right" alt="De toekomst is groen!">
 
