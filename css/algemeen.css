@@ -76,6 +76,19 @@ nav li i {
     align-items: center;
     background-color: black;
 }
+.card .logo {
+    height: 50px;
+    margin-bottom: 38px;
+}
+.card .logo img.card-img-top {
+    width: 125px;
+}
+
+.card-body {
+    padding-bottom: 0;
+    margin-bottom: -25px;
+}
+
 .card-body img {
     width: 100%;
     border-radius: 5px;
@@ -86,7 +99,18 @@ nav li i {
     bottom: 38px;
     right: -76px;
 }
-.btn.btn-primarry {
+
+.cards.bedrijven {
+    margin-bottom: 60px;
+}
+.cards.bedrijven .btn {
+    height: 46px;
+    background-color: white;
+    color: black;
+    border: white;
+    bottom: 52px;
+}
+.btn.btn-primary {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }

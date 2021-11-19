@@ -99,4 +99,6 @@ docker compose up
 
 - [ ] `mvt.api` hernoemen naar `onstage.api` en alle packages mee (beter nu dan later)
 - [ ] Datamodel opstellen, API afmaken volgens specs en [unit tests](https://guides.micronaut.io/latest/creating-your-first-micronaut-app-gradle-java.html) schrijven
-- [ ] Dan tegenaan praten vanuit Angular front-end, of indirect via Wordpress plugin (bedrijfsspecifieke opdrachten en studenten opslaan in custum post types).
+- [ ] Statische HTML ombouwen naar Angular componenten
+- [ ] Dan met AJX tegen REST API praten vanuit Angular front-end (of indirect via Wordpress plugin (bedrijfsspecifieke opdrachten en studenten opslaan in custum post types)).
+- [ ] En dan nog een heel aantal meer schermen en functionaliteit natuurlijk...
