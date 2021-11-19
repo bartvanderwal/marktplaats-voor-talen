@@ -1,0 +1,63 @@
+nav, nav a, nav a:hover, h1 {
+    color: rgb(72, 132, 15);
+}
+
+nav, nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+nav li {
+    list-style: none;
+}
+nav li.selected {
+    font-weight: bold;
+}
+nav li i {
+    color: black;
+    padding-right: 100px;
+}
+/* @media screen and (min-width: 768) {
+
+} */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.card a.btn {
+    width: 200px;
+    text-align: left;
+}
+.card a.btn .fa-angle-right {
+    float: right;
+    position: relative;
+    top: 5px;
+}
+.card .pic {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    background-color: black;
+}
+.btn.btn-primary {
+    /** Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+    --main-btn-color: rgb(226, 139, 1);
+    background-color: var(--main-btn-color);
+    border-color: var(--main-btn-color);
+}
+
+.btn.btn-secondary {
+    --secondary-btn-color: rgb(72, 132, 15);
+    background-color: var(--secondary-btn-color);
+    border-color: var(--secondary-btn-color);
+}
