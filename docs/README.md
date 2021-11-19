@@ -75,7 +75,7 @@ NB Zorg dat er geen (andere) applicatie op poort 8080 draait.
 ```
 
 1. Surf in je browser naar `http://localhost:8080/afstuderen` en check dat `JSON` output komt en correct is (zie voorbeeld in screenshot)
-<img src="screenshot-api.png" alt="Screenshot van backend/API." width="500" float="right">
+<img src="screenshot-api.png" alt="Screenshot van backend/API." width="800" float="right">
 
 1. Zie dat het werkt (hopelijk, maak anders [issue](https://github.com/bartvanderwal/on-stage/issues) aan), open [VS Code][(](https://code.visualstudio.com/download)) en werk verder.
 Check evt. verder de gevolgde [Micronaut docs (voor Java+Gradle)](https://guides.micronaut.io/latest/creating-your-first-micronaut-app-gradle-java.html)
