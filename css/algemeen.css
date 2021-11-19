@@ -10,7 +10,6 @@ h1, nav, nav a, nav a:hover {
     --main-color: rgb(72, 132, 15);
     color: var(--main-color);
 }
-
 h1 {
     font-size: 26px;
 }
@@ -30,9 +29,16 @@ nav a:hover {
 nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    padding-left: 0;
 }
+@media screen and (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
 nav li {
     list-style: none;
 }
@@ -41,7 +47,6 @@ nav li.selected {
 }
 nav li i {
     color: black;
-    padding-right: 100px;
 }
 
 .cards {
@@ -50,12 +55,6 @@ nav li i {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-/* @media screen and (max-width: 768) {
-    .cards {
-        flex-direction: column;
-        flex-wrap: no-wrap;
-    } */
     
 .card {
     width: 300px;
@@ -104,32 +103,35 @@ nav li i {
     margin-bottom: 60px;
 }
 .cards.bedrijven .btn {
-    height: 46px;
+    height: 66px;
     background-color: white;
     color: black;
     border: white;
-    bottom: 52px;
+    bottom: 69px;
+    right: -78px;
 }
+
 .btn.btn-primary {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
-
 .btn.btn-secondary {
     --secondary-color: rgb(226, 139, 1);
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
 
-
 h1, h2, main > p {
-    margin: 10px 10px 50px 210px;
+    margin: 40px 130px;
 }
-.cards .card:first-child {
-    margin-left: 175px;
+
+@media screen and (max-width: 420px) {
+    h1, h2, main > p {
+        margin-left: 45px;
+    }
 }
-h2 {
-    margin-bottom: 20px;
+.cards {
+    margin: 40px 10px;
 }
 
 footer {
