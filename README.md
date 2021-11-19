@@ -12,6 +12,14 @@ Prototype via [Adobe XD](https://xd.adobe.com/view/1ea849ef-3de6-4013-baff-971f0
 </span></figcaption>
 </figure>
 
+## Software Architectuur
+
+Het idee van Marktplaats voor talent is meer dan 'slechts een website-je', maar wel echt webapplicatie 
+![Architectuur schets](docs/architectuur-schets.jpg)
+*Figuur 1*: Schets van de Software Architectuur
+
+TODO: Verder uitwerken met bijvoorbeeld [C4](https://c4model.com/).
+
 ## Technologie
 
 Deze site gebruikt:
@@ -26,14 +34,6 @@ Verder beoogde Technologie:
 - [Wordpress](https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/) (Jaja, the tech each true nerd loves to hate, maar een Wordpress plugin die shortcode beschikbaar stelt voor integreren opdrachten (opgeslagen in custom post type) is wel laagdrempelige instap)
 <img src="docs/bootstrap-5-angular-12.png" alt="Bootstrap 5 met Angular 12 niet 13" float="right" width="200">
 - [Angular](https://angular.io/) en liefst Progressive Web App (PWA) (nieuwste Angular 13 werkt out-of-the box nog niet met [Bootstrap 5](https://ng-bootstrap.github.io/#/home) merkten we) ([of toch?](https://www.youtube.com/watch?v=AJ7iaPea0hE))
-
-## Software Architectuur
-
-Idee is meer dan 'slechts een website-je'
-![Architectuur schets](docs/architectuur-schets.jpg)
-*Figuur 1*: Schets van de Software Architectuur
-
-TODO: Verder uitwerken met bijvoorbeeld [C4](https://c4model.com/).
 
 ## Hoe zelf te runnen en verder te ontwikkelen
 
