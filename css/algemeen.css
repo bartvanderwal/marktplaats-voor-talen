@@ -5,7 +5,7 @@ footer {
     border-top: 4px solid lightgray;
 }
 
-h1, h2, nav, nav a, nav a:hover {
+h1, nav, nav a, nav a:hover {
     /** Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
     --main-color: rgb(72, 132, 15);
     color: var(--main-color);
@@ -15,7 +15,7 @@ h1 {
     font-size: 26px;
 }
 h2 {
-    font-size: 20px;
+    font-size: 18px;
 }
 p {
     color: #505050;
@@ -124,6 +124,12 @@ nav li i {
 
 h1, h2, main > p {
     margin: 10px 10px 50px 210px;
+}
+.cards .card:first-child {
+    margin-left: 175px;
+}
+h2 {
+    margin-bottom: 20px;
 }
 
 footer {
