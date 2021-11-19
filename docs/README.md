@@ -49,9 +49,6 @@ Verder beoogde Technologie:
 ## Hoe zelf te runnen en verder te ontwikkelen
 
 1. [Installeer git](https://git-scm.com/downloads) als je die nog niet had.
-
-*Note to self: [Switch naar bash](https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/) met `chsh -s /bin/bash` als je [zsh problemen]() hebt.)*
-
 1. Clone deze repository
 
 ```bash
@@ -59,13 +56,9 @@ git clone https://github.com/bartvanderwal/on-stage
 ```
 
 1. Ga naar `mvt.web`
-
 1. Run front-end met `npx http-server .` (of eigen voorkeursserver als je NodeJS niet hebt en niet wilt [installeren](https://nodejs.org/en/download/))
-
 1. Surf in je browser naar `http://localhost:80xx` met `xx` zoals run output aangaf.
-
 1. Installeer Gradle package manager voor Java (JVM) applicaties (als je nog niet hent)
-
 1. Run evt. de back-end/API applicatie via Gradlew (TODO: Front-end daar op aansluiten).
 NB Zorg dat er geen (andere) applicatie op poort 8080 draait.
 
@@ -82,7 +75,6 @@ NB Zorg dat er geen (andere) applicatie op poort 8080 draait.
 ```
 
 1. Surf in je browser naar `http://localhost:8080/afstuderen` en check dat `JSON` output komt en correct is (zie voorbeeld in screenshot)
-
 <img src="screenshot-api.png" alt="Screenshot van backend/API." width="500" float="right">
 
 1. Zie dat het werkt (hopelijk, maak anders [issue](https://github.com/bartvanderwal/on-stage/issues) aan), open [VS Code][(](https://code.visualstudio.com/download)) en werk verder.
