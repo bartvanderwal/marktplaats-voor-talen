@@ -8,14 +8,25 @@ Welkom bij 'teh code' i.k.v. Alliander's Innovathon voor team 'Markplaats voor j
 
 Prototype via [Adobe XD](https://xd.adobe.com/view/1ea849ef-3de6-4013-baff-971f09dc5d1c-4bfb/).
 
-<figure><img src="docs/energietransitie2.jpg" width="700" float="right" alt="De toekomst is groen!"><figcaption>Groen is de toekomst. De toekomst is groen! <span style="font-size: 8px;">(attributie: <a href="https://depositphotos.com/334720368/stock-photo-solar-panels-and-wind-turbine.html">depositphotos</a>)
+<figure><img src="energietransitie2.jpg" width="700" float="right" alt="De toekomst is groen!"><figcaption>Groen is de toekomst. De toekomst is groen! <span style="font-size: 8px;">(attributie: <a href="https://depositphotos.com/334720368/stock-photo-solar-panels-and-wind-turbine.html">depositphotos</a>)
 </span></figcaption>
 </figure>
 
 ## Software Architectuur
 
-Het idee van Marktplaats voor talent is meer dan 'slechts een website-je', maar wel echt webapplicatie 
-![Architectuur schets](docs/architectuur-schets.jpg)
+Onderstaande architectuur schets geeft aan dat het idee van *Marktplaats voor talent* meer is dan 'slechts een website-je'. Het is een echte webapplicatie en zelfs een set van (micro)services, zodat het echt eeen levendige hub wordt
+
+- met beoogde white labeling
+- verzamelen interessen, zowel voor specifieke opdracht bij specifiek bedrijf als een open sollicitatie met optioneel CV uploaden
+- CV gegeven en andere prive student informatie alleen inzichtelijk voor medewerkers bedrijf (AVG)
+- aansluiten andere groene partners
+- tonen labels voor vereiste competenties, techieken en aangeboden stagevoorwaarden (minder tekst, meer plaatjes)
+- login mogelijkheden (SSO) voor tonen alleen voor gebruiker elevante informatie,
+- koppelen met Studenten Administratie Systeem (SAS) van onderwijsinstellingen waarmee Alliander samenwerkingsovereenkomst heeft
+- evt uitwerken rol van docenten met feedback voor aanscherpen aangeleverde opdrachten,
+- verzamelen en weergeven eerdere stage ervaringen en statistieken.
+
+![Architectuur schets](architectuur-schets.jpg)
 *Figuur 1*: Schets van de Software Architectuur
 
 TODO: Verder uitwerken met bijvoorbeeld [C4](https://c4model.com/).
@@ -30,9 +41,9 @@ Deze site gebruikt:
 Verder beoogde Technologie:
 
 - [Micronaut](https://micronaut.io/) voor centrale REST API ('Java voor DevOps' volgens 12factor principles + evt. [Micronaut views](https://micronaut-projects.github.io/micronaut-views/latest/guide/) met dan denk liefst Mustache templates 🥸)
-<img src="docs/micronaut-logo.png" float="right" width="100">
+<img src="micronaut-logo.png" float="right" width="100">
 - [Wordpress](https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/) (Jaja, the tech each true nerd loves to hate, maar een Wordpress plugin die shortcode beschikbaar stelt voor integreren opdrachten (opgeslagen in custom post type) is wel laagdrempelige instap)
-<img src="docs/bootstrap-5-angular-12.png" alt="Bootstrap 5 met Angular 12 niet 13" float="right" width="200">
+<img src="bootstrap-5-angular-12.png" alt="Bootstrap 5 met Angular 12 niet 13" float="right" width="200">
 - [Angular](https://angular.io/) en liefst Progressive Web App (PWA) (nieuwste Angular 13 werkt out-of-the box nog niet met [Bootstrap 5](https://ng-bootstrap.github.io/#/home) merkten we) ([of toch?](https://www.youtube.com/watch?v=AJ7iaPea0hE))
 
 ## Hoe zelf te runnen en verder te ontwikkelen
@@ -72,7 +83,7 @@ NB Zorg dat er geen (andere) applicatie op poort 8080 draait.
 
 1. Surf in je browser naar `http://localhost:8080/afstuderen` en check dat `JSON` output komt en correct is (zie voorbeeld in screenshot)
 
-<img src="docs/screenshot-api.png" alt="Screenshot van backend/API." width="500" float="right">
+<img src="screenshot-api.png" alt="Screenshot van backend/API." width="500" float="right">
 
 1. Zie dat het werkt (hopelijk, maak anders [issue](https://github.com/bartvanderwal/on-stage/issues) aan), open [VS Code][(](https://code.visualstudio.com/download)) en werk verder.
 Check evt. verder de gevolgde [Micronaut docs (voor Java+Gradle)](https://guides.micronaut.io/latest/creating-your-first-micronaut-app-gradle-java.html)
