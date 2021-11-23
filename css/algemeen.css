@@ -33,10 +33,20 @@ nav ul {
     flex-direction: row;
     padding-left: 0;
 }
+.menu {
+    display: none;
+}
 @media screen and (max-width: 800px) {
     nav ul {
         flex-direction: column;
     }
+    .menu {
+        display: initial;
+    }
+    nav li {
+        display: none;
+    }
+    .menu + checkbox nav li
 }
 
 nav li {
@@ -49,15 +59,25 @@ nav li i {
     color: black;
 }
 
+/** TODO: Alle 'cards' hetzelfde' (overzicht schermen), niet een flex ander grid), **/
 .cards {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
 }
-    
+
+.cards.alles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.cards.alles {
+    display: grid;
+}
 .card {
-    width: 300px;
+    border-radius: 10px;
 }
 .card a.btn {
     width: 70%;
