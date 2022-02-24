@@ -1,0 +1,164 @@
+nav {
+    border-bottom: 4px solid lightgray;
+}
+footer {
+    border-top: 4px solid lightgray;
+}
+
+h1, nav, nav a, nav a:hover {
+    /** Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+    --main-color: rgb(72, 132, 15);
+    color: var(--main-color);
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 18px;
+}
+p {
+    color: #505050;
+}
+
+nav, nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-left: 0;
+}
+.menu {
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .menu {
+        display: initial;
+    }
+    nav li {
+        display: none;
+    }
+    .menu + checkbox nav li
+}
+
+nav li {
+    list-style: none;
+}
+nav li.selected {
+    font-weight: bold;
+}
+nav li i {
+    color: black;
+}
+
+/** TODO: Alle 'cards' hetzelfde' (overzicht schermen), niet een flex ander grid), **/
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards.alles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.cards.alles {
+    display: grid;
+}
+.card {
+    border-radius: 10px;
+}
+.card a.btn {
+    width: 70%;
+    text-align: left;
+}
+.card a.btn .fa-angle-right {
+    float: right;
+    position: relative;
+    top: 5px;
+}
+.card .pic {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    background-color: black;
+}
+.card .logo {
+    height: 50px;
+    margin-bottom: 38px;
+}
+.card .logo img.card-img-top {
+    width: 125px;
+}
+
+.card-body {
+    padding-bottom: 0;
+    margin-bottom: -25px;
+}
+
+.card-body img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-body img + a {
+    position: relative;
+    bottom: 38px;
+    right: -76px;
+}
+
+.cards.bedrijven {
+    margin-bottom: 60px;
+}
+.cards.bedrijven .btn {
+    height: 66px;
+    background-color: white;
+    color: black;
+    border: white;
+    bottom: 69px;
+    right: -78px;
+}
+
+.btn.btn-primary {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn.btn-secondary {
+    --secondary-color: rgb(226, 139, 1);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+h1, h2, main > p {
+    margin: 40px 130px;
+}
+
+@media screen and (max-width: 420px) {
+    h1, h2, main > p {
+        margin-left: 45px;
+    }
+}
+.cards {
+    margin: 40px 10px;
+}
+
+footer {
+    padding: 20px 40px;
+    margin: 32px 20px;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
