@@ -15,4 +15,4 @@ Voorlopig gebruiken we nog de standaard Wordpress en MySql containers uit Docker
 - <https://www.youtube.com/watch?v=-h7gOJbIpmo&t=1491s> en verder
 - <https://wphierarchy.com>
 
-GITHUB Packages Token: `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`
+GITHUB Packages Token: `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` (old).
