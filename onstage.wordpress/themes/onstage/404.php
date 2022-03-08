@@ -1,3 +1,6 @@
+<?php
+    wp_head();
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
