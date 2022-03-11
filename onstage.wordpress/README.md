@@ -1,14 +1,51 @@
 # OnStage Wordpress theme en plugin
 
-## How to run 
+## How to run
 
 1. Zorg dat je Docker Desktop hebt (of download en installeert vanaf vorige link)
 2. Clone deze repository `
 3. Ga naar de folder toe waarin het bestand `docker-compose.yml` staat `cd wordpress.onstage`
 4. Run Wordpress lokaal  `docker compose up`
 5. Surf in browser naar `http://localhost:8082`
+6. De eerste keer dat je dit doet moet je WP database aanmaken en instellingen doen
 
-## Deployment omgeving via gebruik Docker
+De eerste keer dat je dit doet moet je lang wachten totdat alle containers gedownload zijn voordat Docker deze kan runnen. Deze staan erna lokaal, dus bij volgende keer `compose up` gaat dit sneller.
+
+## Database instellen via GUI
+
+1. Kies Nederlands als taal
+2. VEerdere settings maakt niet veel uit, zoals 'ontmoedig zoekmachines...' etc, want de lokale website zet je als goed is toch niet online
+3. Ga naar `plugins` en activeer de `onstage` plugin
+4. Ga naar `Weergave` en stel het `onstage` theme in als de actieve
+5. Voer een aantal `projecten` en `CV's` in, zodat de site iets heeft om weer te geven en je de lay-out kunt tunen.
+6. Je moet hierbij ook plaatjes opnieuw uploaden. Zet nieuwe plaatjes ook in de `wp-content/themes/assets/plaatjes` folder.
+
+
+## Wat opties bij problemen
+
+Om Wordpress te runnen zonder dat je console bezet is kun je de `-d` optie gebruiken voor 'detached' mode
+
+```bash
+docker compose up -d
+```
+
+Het stoppen van container kan daarna met
+
+```bash
+docker compose down
+```
+
+Mocht je de wordpress database opnieuw willen/moeten aanmaken bij problemen of een andere reden dan moet je het volume verwijderen waar deze instaat. Dit doe je met
+
+```bash
+docker compose down --volumes
+```
+
+!!NB Pas op, hiermee verwijder je de data uit database, zoals afstudeeropdrachten in de wordpress database en wat wp config zoals welke plugin geactiveerd is en welk theme geselecteerd (het `onstage` theme natuurlijk). Dan moet je alle stappen uit bovenstaande lijstje dus opnieuw doen. En ook 
+
+## Achtegrond over deployment naar Staging omgeving via gebruik Docker
+
+TODO 11-3: Automatisch update staging omgeving bij push naar `main` branch van github via inregelen CI middels GitHub actions (script `deploy-staging` bevat opzet).
 
 OnStage ontwikkelen en deployen we met Docker, dus we hanteren een container-based aanpak en volgen een DevOps mentaliteit.
 
