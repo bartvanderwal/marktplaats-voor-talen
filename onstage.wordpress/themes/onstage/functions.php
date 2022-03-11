@@ -52,4 +52,4 @@ function onstage_menus() {
     register_nav_menu($locations);
 }
 
-add_action('init', 'onstage_menus');
+// add_action('init', 'onstage_menus');

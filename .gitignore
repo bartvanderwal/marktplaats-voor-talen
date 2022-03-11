@@ -15,3 +15,6 @@ bin/
 .factorypath
 
 node_modules
+
+onstage.wordpress/docker-compose.prod.yml
+secrets.txt

@@ -60,6 +60,11 @@ global $blog_id;
 // Set initial default constants including WP_MEMORY_LIMIT, WP_MAX_MEMORY_LIMIT, WP_DEBUG, SCRIPT_DEBUG, WP_CONTENT_DIR and WP_CACHE.
 wp_initial_constants();
 
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+define( 'WP_DEBUG_LOG', true );
+
+
 // Make sure we register the shutdown handler for fatal errors as soon as possible.
 wp_register_fatal_error_handler();
 
