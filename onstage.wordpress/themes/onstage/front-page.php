@@ -11,16 +11,17 @@
             $loop = new WP_Query($args);
             if ($loop->have_posts()) { ?>
                 <section class="cards alles">
-                    <?php while ($loop->have_posts()) {
-                        $loop->the_post(); ?>
+                    <?php while ($loop->have_posts()) { $loop->the_post(); ?>
                         <article class="card">
-                        <section class="card-body">
-                            <h5 class="card-title"><i class="fas fa-building"></i> <?php the_title(); ?></h5>
-                            <p class="card-text"><?php the_content(); ?></p>
-                            <img src="<?= get_the_post_thumbnail() ?>" alt="op de HAN">
-                            <a href="<?= the_permalink() ?>" class="btn btn-secondary">Bekijk <i class="fas fa-angle-right"></i></a>
-                        </section>
-                    </article>
+                            <section class="card-body">
+                                <h5 class="card-title"><i class="fas fa-building"></i> <?php the_title(); ?></h5>
+                                <p class="card-text"><?php the_excerpt() ?></p>
+                                <?php if (has_post_thumbnail()) { ?>
+                                    <img src="<?= get_the_post_thumbnail() ?>" alt="op de HAN"/>
+                                <?php } ?>
+                                <a href="<?= the_permalink() ?>" class="btn btn-secondary">Bekijk <i class="fas fa-angle-right"></i></a>
+                            </section>
+                        </article>
                     <?php } ?>
                 </section>
             <?php } else { ?>
