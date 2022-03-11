@@ -18,7 +18,7 @@
                             <h5 class="card-title"><i class="fas fa-building"></i> <?php the_title(); ?></h5>
                             <p class="card-text"><?php the_content(); ?></p>
                             <img src="<?= get_the_post_thumbnail() ?>" alt="op de HAN">
-                            <a href="<?= get_template_directory() . '/single-onstage_stage.php' ?>" class="btn btn-secondary">Bekijk <i class="fas fa-angle-right"></i></a>
+                            <a href="<?= the_permalink() ?>" class="btn btn-secondary">Bekijk <i class="fas fa-angle-right"></i></a>
                         </section>
                     </article>
                     <?php } ?>

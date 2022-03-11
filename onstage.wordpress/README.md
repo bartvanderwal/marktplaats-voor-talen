@@ -1,17 +1,17 @@
 # OnStage Wordpress theme en plugin
 
-## How to run
+## A. How to run
 
 1. Zorg dat je Docker Desktop hebt (of download en installeert vanaf vorige link)
 2. Clone deze repository `
 3. Ga naar de folder toe waarin het bestand `docker-compose.yml` staat `cd wordpress.onstage`
 4. Run Wordpress lokaal  `docker compose up`
 5. Surf in browser naar `http://localhost:8082`
-6. De eerste keer dat je dit doet moet je WP database aanmaken en instellingen doen
+6. De eerste keer dat je dit doet moet je WP database aanmaken en instellingen doen; zie sectie B
 
 De eerste keer dat je dit doet moet je lang wachten totdat alle containers gedownload zijn voordat Docker deze kan runnen. Deze staan erna lokaal, dus bij volgende keer `compose up` gaat dit sneller.
 
-## Database instellen via GUI
+## B. Database en config instellen via GUI
 
 1. Kies Nederlands als taal
 2. VEerdere settings maakt niet veel uit, zoals 'ontmoedig zoekmachines...' etc, want de lokale website zet je als goed is toch niet online
@@ -19,7 +19,7 @@ De eerste keer dat je dit doet moet je lang wachten totdat alle containers gedow
 4. Ga naar `Weergave` en stel het `onstage` theme in als de actieve
 5. Voer een aantal `projecten` en `CV's` in, zodat de site iets heeft om weer te geven en je de lay-out kunt tunen.
 6. Je moet hierbij ook plaatjes opnieuw uploaden. Zet nieuwe plaatjes ook in de `wp-content/themes/assets/plaatjes` folder.
-
+7. Zet ook de `permalink' instellingen op `Berichtnaam` op de [settings page](http://localhost:8082/wp-admin/options-permalink.php) voor [SEO](https://www.searchenginejournal.com/technical-seo/url-structure/)-vriendelijke instellingen.
 
 ## Wat opties bij problemen
 
