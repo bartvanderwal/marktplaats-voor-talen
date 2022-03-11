@@ -12,9 +12,11 @@ h1, nav, nav a, nav a:hover {
     color: var(--main-color);
 }
 h1 {
+    color: #49840E;
     font-size: 26px;
 }
 h2 {
+    color: #49840E;
     font-size: 18px;
 }
 p {
@@ -163,4 +165,14 @@ footer {
 
 .card-title {
     text-transform: uppercase;
+}
+
+/** Backgrounds **/
+
+.bg-green {
+    background-color: #49840E;
+}
+
+.bg-lightgreen {
+    background-color: #99BA80;
 }
