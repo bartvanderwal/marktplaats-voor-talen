@@ -21,6 +21,8 @@ De eerste keer dat je dit doet moet je lang wachten totdat alle containers gedow
 6. Je moet hierbij ook plaatjes opnieuw uploaden. Zet nieuwe plaatjes ook in de `wp-content/themes/assets/plaatjes` folder.
 7. Zet ook de `permalink' instellingen op `Berichtnaam` op de [settings page](http://localhost:8082/wp-admin/options-permalink.php) voor [SEO](https://www.searchenginejournal.com/technical-seo/url-structure/)-vriendelijke instellingen.
 
+![image](https://user-images.githubusercontent.com/3029472/157887972-32f96587-2f54-43b5-ab10-bf4a0f6c559b.png)
+
 ## Wat opties bij problemen
 
 Om Wordpress te runnen zonder dat je console bezet is kun je de `-d` optie gebruiken voor 'detached' mode
