@@ -1,5 +1,12 @@
 # OnStage Wordpress theme en plugin
 
+## How to run 
+
+1. Zorg dat je Docker Desktop hebt (of download en installeert vanaf vorige link)
+2. Clone deze repository `
+3. Ga naar de folder toe waarin het bestand `docker-compose.yml` staat
+4. Om  `docker compose up`
+
 ## Deployment omgeving via gebruik Docker
 
 OnStage ontwikkelen en deployen we met Docker, dus we hanteren een container-based aanpak en volgen een DevOps mentaliteit.
