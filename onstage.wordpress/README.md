@@ -4,8 +4,9 @@
 
 1. Zorg dat je Docker Desktop hebt (of download en installeert vanaf vorige link)
 2. Clone deze repository `
-3. Ga naar de folder toe waarin het bestand `docker-compose.yml` staat
-4. Om  `docker compose up`
+3. Ga naar de folder toe waarin het bestand `docker-compose.yml` staat `cd wordpress.onstage`
+4. Run Wordpress lokaal  `docker compose up`
+5. Surf in browser naar `http://localhost:8082`
 
 ## Deployment omgeving via gebruik Docker
 
