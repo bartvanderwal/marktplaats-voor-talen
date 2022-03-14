@@ -1,0 +1,10 @@
+{
+    // Bron: https://stackoverflow.com/questions/43836861/how-to-run-a-command-in-visual-studio-code-with-launch-json
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "run_wordpress",
+        "command": "docker", // Could be any other shell command
+        "args": ["compose", "up"],
+        "type": "shell"
+    }]
+}
