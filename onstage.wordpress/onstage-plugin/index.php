@@ -8,9 +8,13 @@
   Author URI: http://github.com/bartvanderwal
 */
 
+define('CUSTOM_POST_TYPE_STAGE', 'onstage_stage');
+define('CUSTOM_POST_TYPE_CV', 'onstage_open_cv');
+
+
 // Bron: https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/
 function onstage_custom_post_type() {
-  register_post_type('onstage_stage',
+  register_post_type(CUSTOM_POST_TYPE_STAGE,
       array(
           'labels'      => array(
               'name'          => __('Stages', 'textdomain'),
@@ -25,7 +29,7 @@ function onstage_custom_post_type() {
           'supports'    => array('title', 'editor', 'author', 'excerpt', 'thumbnail')
       )
   );
-  register_post_type('onstage_open_cv',
+  register_post_type(CUSTOM_POST_TYPE_CV,
       array(
           'labels'      => array(
               'name'          => __('Open CV\'s', 'textdomain'),
@@ -44,3 +48,40 @@ function onstage_custom_post_type() {
   add_theme_support('post-thumbnails', array('onstage_stage', 'onstage_open_cv'));
 }
 add_action('init', 'onstage_custom_post_type');
+
+define ('EXCERPT_LENGTH_CUSTOM_POST_TYPES', 30);
+// Kon geen standaard WP constante vinden voor deze 55, dus zelf maar aangemaakt, in kader geen 'magic numbers'.
+define ('EXCERPT_LENGTH_DEFAULT', 55);
+
+function custom_excerpt_length_custom_post_types() {
+    global $post;
+
+    switch ($post->post_type) {
+        case CUSTOM_POST_TYPE_STAGE:
+        case CUSTOM_POST_TYPE_CV:
+            return EXCERPT_LENGTH_CUSTOM_POST_TYPES;
+        default:
+            return EXCERPT_LENGTH_DEFAULT;
+    }
+}
+
+add_filter('excerpt_length', 'custom_excerpt_length_custom_post_types', EXCERPT_LENGTH_DEFAULT);
+
+/** Bovenstaande werkt - blijkbaar - nog niet voor posts war de gebruiker een handmatige excerpt heeft ingevoerd */
+// Bron: https://wordpress.stackexchange.com/questions/139953/excerpt-length-not-working#answer-398655
+function custom_excerpt_length($excerpt) {
+    if (has_excerpt()) {
+        $excerpt = wp_trim_words(get_the_excerpt(), apply_filters("excerpt_length", EXCERPT_LENGTH_CUSTOM_POST_TYPES));
+    }
+    return $excerpt;
+}
+
+add_filter("the_excerpt", "custom_excerpt_length", EXCERPT_LENGTH_DEFAULT);
+
+/**
+ * En om de lelijke standaard '[...]' te vervangen door nette HTML ellipsis.
+ */
+function new_excerpt_more($more) {
+    return '<span class="more">...</span>'; // ' &helips;';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
