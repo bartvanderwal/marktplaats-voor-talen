@@ -24,8 +24,10 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <article class="card card-home mb-3">
                                 <section>
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title my-2"><i class="fas fa-building me-2"></i> <?php the_title(); ?></h5>
+                                    </div>  
                                     <div class="card-body">
-                                        <h5 class="card-title"><i class="fas fa-building me-2"></i> <?php the_title(); ?></h5>
                                         <p class="mb-0"><?php echo  get_the_excerpt(); ?></p> 
                                     </div>
                                     <div class="card-footer card-footer-background">
@@ -51,8 +53,10 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <article class="card card-home mb-3">
                                 <section>
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title my-2"><i class="fas fa-user-graduate me-2"></i> <?php the_title(); ?></h5>
+                                    </div>  
                                     <div class="card-body">
-                                        <h5 class="card-title"><i class="fas fa-user-graduate me-2"></i> <?php the_title(); ?></h5>
                                         <p class="mb-0"><?php echo  get_the_excerpt(); ?></p> 
                                     </div>
                                     <div class="card-footer card-footer-cv">
