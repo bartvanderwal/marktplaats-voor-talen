@@ -21,7 +21,7 @@
                     <div class="row mt-4">
                     <?php while ($loop->have_posts()) {
                         $loop->the_post(); ?>
-                        <div class="col-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <article class="card card-home mb-3">
                                 <section>
                                     <div class="card-body">
@@ -48,7 +48,7 @@
                     <div class="row mt-4">
                     <?php while ($loop->have_posts()) {
                         $loop->the_post(); ?>
-                        <div class="col-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <article class="card card-home mb-3">
                                 <section>
                                     <div class="card-body">
