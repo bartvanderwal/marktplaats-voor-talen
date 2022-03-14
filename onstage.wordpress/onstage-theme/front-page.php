@@ -28,7 +28,7 @@
                                         <h5 class="card-title my-2"><i class="fas fa-building me-2"></i> <?php the_title(); ?></h5>
                                     </div>  
                                     <div class="card-body">
-                                        <p class="mb-0"><?php echo  get_the_excerpt(); ?></p> 
+                                        <p class="mb-0"><?php echo  get_the_excerpt(); ?></p>
                                     </div>
                                     <div class="card-footer card-footer-background">
                                         <?= get_the_post_thumbnail() ?>
@@ -57,7 +57,7 @@
                                         <h5 class="card-title my-2"><i class="fas fa-user-graduate me-2"></i> <?php the_title(); ?></h5>
                                     </div>  
                                     <div class="card-body">
-                                        <p class="mb-0"><?php echo  get_the_excerpt(); ?></p> 
+                                        <p class="mb-0"><?php echo  get_the_excerpt(); ?></p>
                                     </div>
                                     <div class="card-footer card-footer-cv">
                                         <div class="row">
