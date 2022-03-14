@@ -49,7 +49,7 @@ function onstage_custom_post_type() {
 }
 add_action('init', 'onstage_custom_post_type');
 
-define ('EXCERPT_LENGTH_CUSTOM_POST_TYPES', 30);
+define ('EXCERPT_LENGTH_CUSTOM_POST_TYPES', 25);
 // Kon geen standaard WP constante vinden voor deze 55, dus zelf maar aangemaakt, in kader geen 'magic numbers'.
 define ('EXCERPT_LENGTH_DEFAULT', 55);
 
