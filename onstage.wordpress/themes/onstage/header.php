@@ -24,7 +24,7 @@
             ?>
             <nav>
                 <ul>
-                    <li class="logo"><a href="index.html"><img src="wp-content/themes/onstage/assets/plaatjes/on-stage-logo.png" alt="On Stage" width="100px"></a></li>
+                    <li class="logo"><a href="/"><img src="<?= get_theme_file_uri() ?>/assets/plaatjes/on-stage-logo.png" alt="On Stage" width="100px"></a></li>
                     <li class="menu">
                         <label for="menu"><i class="fas fa-hamburger"></i> Menu</label>
                         <input type="checkbox" id="menu">
@@ -36,5 +36,4 @@
                     <li title="No login yet... :)"><a href="https://github.com/bartvanderwal/on-stage/tree/main/docs"><i class="fas fa-user"></i> Docs</a></li>
                 </ul>
             </nav>
-            <h1><?php the_title(); ?></h1>
         </header>
