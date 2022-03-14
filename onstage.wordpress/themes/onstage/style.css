@@ -6,6 +6,10 @@ footer {
     border-top: 4px solid lightgray;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1, nav, nav a, nav a:hover {
     /** Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
     --main-color: rgb(72, 132, 15);
@@ -14,6 +18,7 @@ h1, nav, nav a, nav a:hover {
 h1 {
     color: #49840E;
     font-size: 26px;
+    font-style: italic;
 }
 h2 {
     color: #49840E;
@@ -64,34 +69,36 @@ nav li i {
 }
 
 /** TODO: Alle 'cards' hetzelfde' (overzicht schermen), niet een flex ander grid), **/
-.cards {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.cards.alles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-}
+/** Card Home **/
 
-.cards.alles {
-    display: grid;
-}
-.card {
+.card-home {
     border-radius: 10px;
 }
-.card a.btn {
-    width: 70%;
-    text-align: left;
+
+.card-home .card-title {
+    text-transform: uppercase;
+    color: #49840E;
 }
-.card a.btn .fa-angle-right {
-    float: right;
-    position: relative;
-    top: 5px;
+
+.card-home .card-title i {
+    opacity: 0.6;
 }
+
+.card-home .card-footer.card-footer-background {
+    padding: 0;
+}
+
+.card-home .card-footer.card-footer-background img {
+    border-radius: 0 0 10px 10px;
+}
+
+.card-home .card-footer.card-footer-background a {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
 .card .pic {
     display: flex;
     justify-content: center;
@@ -99,34 +106,28 @@ nav li i {
     align-items: center;
     background-color: black;
 }
+
 .card .logo {
     height: 50px;
     margin-bottom: 38px;
 }
+
 .card .logo img.card-img-top {
     width: 125px;
 }
 
-.card-body {
-    padding-bottom: 0;
-    margin-bottom: -25px;
-}
-
-.card-body img {
+ .card-body img {
     width: 100%;
     border-radius: 5px;
 }
 
-.card-body img + a {
+ .card-body img + a {
     position: relative;
     bottom: 38px;
     right: -76px;
 }
 
-.cards.bedrijven {
-    margin-bottom: 60px;
-}
-.cards.bedrijven .btn {
+ .cards.bedrijven .btn {
     height: 66px;
     background-color: white;
     color: black;
@@ -134,6 +135,8 @@ nav li i {
     bottom: 69px;
     right: -78px;
 }
+
+/** Buttons **/
 
 .btn.btn-primary {
     background-color: var(--main-color);
@@ -145,26 +148,15 @@ nav li i {
     border-color: var(--secondary-color);
 }
 
-header h1, header h2, main > p {
-    margin: 40px 130px;
-}
-
 @media screen and (max-width: 420px) {
     h1, h2, main > p {
         margin-left: 45px;
     }
 }
-.cards {
-    margin: 40px 10px;
-}
 
 footer {
     padding: 20px 40px;
     margin: 32px 20px;
-}
-
-.card-title {
-    text-transform: uppercase;
 }
 
 /** Backgrounds **/
