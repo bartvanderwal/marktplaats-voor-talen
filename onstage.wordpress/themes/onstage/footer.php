@@ -1,4 +1,8 @@
 <?php
     wp_footer();
 ?>
-<footer>&copy; Team 21 - Marktplaats voor Talent & Alliander & HAN - november 2021</footer>
+<footer>
+    <div class="footer">
+        <small class="text-muted">&copy; Marktplaats voor Talent - Alliander & HAN <i>- november 2021</i></small>
+    </div>
+</footer>
