@@ -204,9 +204,11 @@ nav ul {
 
 nav li {
     list-style: none;
+    font-family: proxima_novalight, sans-serif;
+    font-size: 18px;
 }
 nav li.active {
-    font-weight: bold;
+    font-family: proxima_novabold, sans-serif;
 }
 nav li i {
     color: black;
