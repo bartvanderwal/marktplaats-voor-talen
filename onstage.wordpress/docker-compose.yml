@@ -19,7 +19,7 @@ services:
       # - ./wordpress:/var/www/html
       - ./onstage-plugin:/var/www/html/wp-content/plugins/onstage/
       - ./onstage-theme:/var/www/html/wp-content/themes/onstage/
-      - /.uploads:/var/www/html/wp-content/uploads
+      - ./uploads:/var/www/html/wp-content/uploads
   db:
     image: mysql:5.7
     restart: always
