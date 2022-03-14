@@ -93,10 +93,21 @@ nav li i {
     border-radius: 0 0 10px 10px;
 }
 
-.card-home .card-footer.card-footer-background a {
+.card-home .card-footer a {
     position: absolute;
     bottom: 16px;
     right: 16px;
+}
+
+.card-home .card-footer.card-footer-cv {
+    border-top: 0;
+    background-color: transparent;
+    padding-bottom: 16px;
+}
+
+.card-home .card-footer.card-footer-cv a {
+    background-color: #49840E;
+    border-color: #49840E;
 }
 
 .card .pic {
