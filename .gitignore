@@ -18,3 +18,11 @@ node_modules
 
 onstage.wordpress/docker-compose.prod.yml
 secrets.txt
+
+onstage.wordpress/wordpress_org/
+
+onstage.wordpress/wordpress
+onstage.wordpress/plugins/
+onstage/wordpress/themes/
+!onstage.wordpress/plugins/onstage
+!onstage.wordpress/themes/onstage
