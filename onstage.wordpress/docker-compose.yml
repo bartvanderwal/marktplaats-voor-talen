@@ -17,8 +17,9 @@ services:
       WORDPRESS_DEBUG: true
     volumes:
       # - ./wordpress:/var/www/html
-      - ./plugins/onstage:/var/www/html/wp-content/plugins/onstage/
-      - ./themes/onstage:/var/www/html/wp-content/themes/onstage/
+      - ./onstage-plugin:/var/www/html/wp-content/plugins/onstage/
+      - ./onstage-theme:/var/www/html/wp-content/themes/onstage/
+      - /.uploads:/var/www/html/wp-content/uploads
   db:
     image: mysql:5.7
     restart: always
