@@ -94,6 +94,40 @@ p {
     background-color: #99BA80;
 }
 
+.bg-banner-samenwerking {
+    background-image: url(assets/plaatjes/banner_samenwerking.png);
+    padding-top: 120px;
+}
+
+@media (max-width: 800px) {
+    .bg-banner-samenwerking {
+        background-size: cover;
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 1000px) {
+    .bg-banner-samenwerking {
+        background-size: 120%;
+        background-position-x: -70px;
+        background-position-y: -135px;
+    }
+  }
+
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    .bg-banner-samenwerking {
+        background-size: 120%;
+        background-position-x: -110px;
+        background-position-y: -200px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .bg-banner-samenwerking {
+        background-size: cover;
+        background-position-y: -185px;
+    }
+  }
+
 
 /** Card Home **/
 

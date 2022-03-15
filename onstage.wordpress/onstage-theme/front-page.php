@@ -93,6 +93,24 @@
                     // }
                 ?>
         </div>
+        <div class="container-fluid bg-banner-samenwerking my-5">
+            <div class="container">
+                <div class="row pt-5 pb-3 d-flex align-items-center justify-content-center">
+                    <div class="col col-lg-8">
+                        <div class="alert bg-green p-4">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-sm-8 col-xl-9">
+                                    <h2 class="text-white m-0"><i>Ben jij die parel waar we naar op zoek zijn? Of heb je een toffe opdracht waar je een goeie match voor zoekt? Meld je dan nu aan!</i></h2>
+                                 </div>
+                                 <div class="col-12 col-sm-4 col-xl-3 mt-3 mt-lg-0 text-end">
+                                    <button class="btn btn-primary">Aanmelden <i class="fas fa-angle-right ms-2"></i></button>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </main>
         <?php get_footer(); ?>
     </body>
