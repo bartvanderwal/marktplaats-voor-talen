@@ -100,7 +100,7 @@
                         <div class="alert bg-green p-4">
                             <div class="row d-flex align-items-center justify-content-center">
                                 <div class="col-12 col-sm-8 col-xl-9">
-                                    <h2 class="text-white m-0"><i>Ben jij die parel waar we naar op zoek zijn? Of heb je een toffe opdracht waar je een goeie match voor zoekt? Meld je dan nu aan!</i></h2>
+                                    <h3 class="text-white m-0"><i>Ben jij die parel waar we naar op zoek zijn? Of heb je een toffe opdracht waar je een goeie match voor zoekt? Meld je dan nu aan!</i></h3>
                                  </div>
                                  <div class="col-12 col-sm-4 col-xl-3 mt-3 mt-lg-0 text-end">
                                     <button class="btn btn-primary">Aanmelden <i class="fas fa-angle-right ms-2"></i></button>
@@ -109,6 +109,49 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Ervaringen</h2>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_rene.png">
+                                <a href="#" class="btn btn-secondary mx-auto">René <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_kyra.png">
+                                <a href="#" class="btn btn-secondary mx-auto">Kyra <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_boas.png">
+                                <a href="#" class="btn btn-secondary mx-auto">Boas <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_david.png">
+                                <a href="#" class="btn btn-secondary mx-auto">David <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
             </div>
         </div>
         </main>
