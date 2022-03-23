@@ -10,7 +10,7 @@
 
 define('CUSTOM_POST_TYPE_STAGE', 'onstage_stage');
 define('CUSTOM_POST_TYPE_CV', 'onstage_open_cv');
-
+define('CUSTOM_POST_TYPE_COMPANY', 'onstage_open_company');
 
 // Bron: https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/
 function onstage_custom_post_type() {
@@ -85,3 +85,6 @@ function new_excerpt_more($more) {
     return '<span class="more">...</span>'; // ' &helips;';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// TODO
+// require_once '_includes/create-bedrijven-page.php';

@@ -17,7 +17,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-body">
                         <h3>Onderwerpen</h3>
                         <ul>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="card bg-green">
+                <div class="card h-100 bg-green">
                     <div class="card-body">
                         <i class="fas fa-icon-clock"></i>
                         <div>6 maanden</div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-body">
                         <h3>Competenties</h3>
                         <ul>
@@ -50,7 +50,7 @@
         </div>
         <div class="row">
             <div class="col-6">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-body">
                         <h3>Organisatie</h3>
                         <p>Deze stage vindt plaats bij Alliander binnen het team Databrokers.</p>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <div class="card bg-lightgreen">
+                <div class="card h-100 bg-lightgreen">
                     <div class="card-body">
                         <div>€ 500,-</div>
                         <div>per maand + laptop in bruikleen + reiskosten</div>

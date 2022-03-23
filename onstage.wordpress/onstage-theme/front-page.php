@@ -26,7 +26,25 @@
                                 <section>
                                     <div class="card-body">
                                         <h5 class="card-title"><i class="fas fa-building me-2"></i> <?php the_title(); ?> </h5>
-                                        <p class="mb-0"><?php the_excerpt(); ?></p> 
+                                        <p class="mb-0">
+                                            <?php the_excerpt(); ?>
+                                            <?php 
+                                              $ts = 1451865600;
+                                              $lang = get_option('WPLANG');
+                                              // setlocale(LC_TIME, $lang);
+                                              // $format2 = '%e %B %G';
+                                              // $string_date = strftime($format2, $ts);
+                                              
+                                              // Bron: https://www.php.net/manual/en/intldateformatter.format.php
+                                              $shortDateFormat = datefmt_create(
+                                                $lang,
+                                                IntlDateFormatter::SHORT,
+                                                IntlDateFormatter::NONE);
+                                              echo 'First Formatted output is ' . datefmt_format($shortDateFormat, $ts);
+                                              // echo $string_date;
+                                            ?>
+                                            <span style="color: grey; font-size:small;" title="">ma 14-3-2022 <?= get_the_date('D d-m-y') ?></span>
+                                        </p>
                                     </div>
                                     <div class="card-footer card-footer-background">
                                         <?= get_the_post_thumbnail() ?>
