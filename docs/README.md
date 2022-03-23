@@ -8,6 +8,7 @@ Momenteel (maart 2022) werken een HAN AIM en Alliander medewerker aan een protot
 - [onstage.wordpress](/onstage.wordpress)
 - [onstage.react](/onstage.react)
 - [onstage.api](/onstage.api)
+- [onstage.html-prototype](/onstage.html-prototype)
 
 De 2 andere projecten volgen later.
 
