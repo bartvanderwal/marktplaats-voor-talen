@@ -24,27 +24,11 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <article class="card card-home mb-3">
                                 <section>
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title my-2"><i class="fas fa-building me-2"></i> <?php the_title(); ?></h5>
+                                    </div>  
                                     <div class="card-body">
-                                        <h5 class="card-title"><i class="fas fa-building me-2"></i> <?php the_title(); ?> </h5>
-                                        <p class="mb-0">
-                                            <?php the_excerpt(); ?>
-                                            <?php 
-                                              $ts = 1451865600;
-                                              $lang = get_option('WPLANG');
-                                              // setlocale(LC_TIME, $lang);
-                                              // $format2 = '%e %B %G';
-                                              // $string_date = strftime($format2, $ts);
-                                              
-                                              // Bron: https://www.php.net/manual/en/intldateformatter.format.php
-                                              $shortDateFormat = datefmt_create(
-                                                $lang,
-                                                IntlDateFormatter::SHORT,
-                                                IntlDateFormatter::NONE);
-                                              echo 'First Formatted output is ' . datefmt_format($shortDateFormat, $ts);
-                                              // echo $string_date;
-                                            ?>
-                                            <span style="color: grey; font-size:small;" title="">ma 14-3-2022 <?= get_the_date('D d-m-y') ?></span>
-                                        </p>
+                                        <p class="mb-0"><?php echo  get_the_excerpt(); ?></p>
                                     </div>
                                     <div class="card-footer card-footer-background">
                                         <?= get_the_post_thumbnail() ?>
@@ -69,9 +53,11 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <article class="card card-home mb-3">
                                 <section>
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title my-2"><i class="fas fa-user-graduate me-2"></i> <?php the_title(); ?></h5>
+                                    </div>  
                                     <div class="card-body">
-                                        <h5 class="card-title"><i class="fas fa-user-graduate me-2"></i> <?php the_title(); ?></h5>
-                                        <p class="mb-0"><?php echo get_the_excerpt(); ?></p> 
+                                        <p class="mb-0"><?php echo  get_the_excerpt(); ?></p>
                                     </div>
                                     <div class="card-footer card-footer-cv">
                                         <div class="row">
@@ -106,6 +92,67 @@
                     //     }
                     // }
                 ?>
+        </div>
+        <div class="container-fluid bg-banner-samenwerking my-5">
+            <div class="container">
+                <div class="row pt-5 pb-3 d-flex align-items-center justify-content-center">
+                    <div class="col col-lg-8">
+                        <div class="alert bg-green p-4">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-sm-8 col-xl-9">
+                                    <h3 class="text-white m-0"><i>Ben jij die parel waar we naar op zoek zijn? Of heb je een toffe opdracht waar je een goeie match voor zoekt? Meld je dan nu aan!</i></h3>
+                                 </div>
+                                 <div class="col-12 col-sm-4 col-xl-3 mt-3 mt-lg-0 text-end">
+                                    <button class="btn btn-primary">Aanmelden <i class="fas fa-angle-right ms-2"></i></button>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Ervaringen</h2>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_rene.png">
+                                <a href="#" class="btn btn-secondary mx-auto">René <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_kyra.png">
+                                <a href="#" class="btn btn-secondary mx-auto">Kyra <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_boas.png">
+                                <a href="#" class="btn btn-secondary mx-auto">Boas <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card card-ervaringen border-0 mb-3">
+                                <div class="card-footer card-footer-background border-0">
+                                <img src="<?= get_theme_file_uri() ?>/assets/plaatjes/ervaringen_david.png">
+                                <a href="#" class="btn btn-secondary mx-auto">David <i class="fas fa-angle-right ms-2"></i></a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
         </div>
         </main>
         <?php get_footer(); ?>
