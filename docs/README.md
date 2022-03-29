@@ -5,6 +5,7 @@
 ## Vrijdag 11 maart Overzicht deelprojecten en huidige beoogde prototype
 
 Momenteel (maart 2022) werken een HAN AIM en Alliander medewerker aan een prototype Wordpress applicatie. De code hiervoor staat in de eerste van de 3 hoofdfolders. Elke folder heeft een eigen `README.md`, dus je kunt hieronder doorklikken.
+
 - [onstage.wordpress](/onstage.wordpress)
 - [onstage.react](/onstage.react)
 - [onstage.api](/onstage.api)
@@ -16,10 +17,10 @@ In `onstage.react` komt in de toekomst een versie van de huidige front-end met R
 
 In `onstage.api` staat Java code die een REST API is naar een beoogde centrale hub/database waar alle afstudeeropdrachten van meerdere organisaties in staan. DEze hub zit direct ingebouwd in de `onstage.api` code zelf, of wordt een aparte applicatie/microservice bv. `onstage.hub` geheten. De hub is dan een beoogd centraal platform voor meerdere bedrijven. Naast Alliander ook bv. Enexis of andere geinteresseerde bedrijven en AIM partners. Idee is dat deze bedrijven eigen Wordpress sites hebben als Corporate website. En hierop makkelijk nieuwe eigen afstudeeropdrachten kunnen publiceren of beheren. Dit zijn dan corporate sites gemaakt met Wordpress, waarin de OnStage Wordpress plugin is geinstalleerd. De centrale hub moet kunnen communiceren met meerdere andereBedrijven kunnen dan hierin
 
-  - Deze centrale hub gaat bijvoorbeeld ook afstudeeropdrachten halen uit de (besloten) AIM facebook pagina via de Facebook API. Deze Facebook pagina gebruikt AIM voor alle afstudeeropdrachten.
-  - De hub kan ook opdrachten bevatten voor NGI-0 project voor vergroten van toegankelijkheid. Of voor groepsopdrachten voor AIM projectsemesters. Vanut CMD kant van AIM zijn hier ook medewerkers bezig met een prototype (nu op https://lectoraat.aimsites.nl/).
-  - De centrale hub kan ook extra workflow functionaliteit gaan bieden en opslagmogelijkheden bevatten om afstudeeropdrachten verder te verrijken of in te delen naar geschikte onderwijs profielen door docenten, of praktijkbureau medewerkers. Of feedback mogelijkheden te geven tussen afstudeerbegeleiders en bedrijfsopdrachtgevers op inhoudelijke eisen aan opdrachten. Of ook het linken van opdrachten tijdens of na het uitvoeren ervan aan geschreven beroepsproducten, zoals documenten, verslagen, presentaties, moodboards e.d.
-  - Dit past ook in lijn met het flexibieler maken van het onderwijs.
+- Deze centrale hub gaat bijvoorbeeld ook afstudeeropdrachten halen uit de (besloten) AIM facebook pagina via de Facebook API. Deze Facebook pagina gebruikt AIM voor alle afstudeeropdrachten.
+- De hub kan ook opdrachten bevatten voor NGI-0 project voor vergroten van toegankelijkheid. Of voor groepsopdrachten voor AIM projectsemesters. Vanut CMD kant van AIM zijn hier ook medewerkers bezig met een prototype (nu op https://lectoraat.aimsites.nl/).
+- De centrale hub kan ook extra workflow functionaliteit gaan bieden en opslagmogelijkheden bevatten om afstudeeropdrachten verder te verrijken of in te delen naar geschikte onderwijs profielen door docenten, of praktijkbureau medewerkers. Of feedback mogelijkheden te geven tussen afstudeerbegeleiders en bedrijfsopdrachtgevers op inhoudelijke eisen aan opdrachten. Of ook het linken van opdrachten tijdens of na het uitvoeren ervan aan geschreven beroepsproducten, zoals documenten, verslagen, presentaties, moodboards e.d.
+- Dit past ook in lijn met het flexibieler maken van het onderwijs.
 
 ## Do 18-11-2021
 
@@ -27,8 +28,13 @@ Welkom bij 'teh code' i.k.v. Alliander's Innovathon voor team 'Markplaats voor j
 
 Prototype via [Adobe XD](https://xd.adobe.com/view/1ea849ef-3de6-4013-baff-971f09dc5d1c-4bfb/).
 
-<figure><img src="energietransitie2.jpg" width="700" float="right" alt="De toekomst is groen!"><figcaption>Groen is de toekomst. De toekomst is groen! <span style="font-size: 8px;">(attributie: <a href="https://depositphotos.com/334720368/stock-photo-solar-panels-and-wind-turbine.html">depositphotos</a>)
-</span></figcaption>
+<figure>
+  <img src="energietransitie2.jpg" width="700" float="right" alt="De toekomst is groen!">
+  <figcaption>
+    Groen is de toekomst. De toekomst is groen!
+    <span style="font-size: 8px;">(attributie: <a href="https://depositphotos.com/334720368/stock-photo-solar-panels-and-wind-turbine.html">depositphotos</a>)
+    </span>
+  </figcaption>
 </figure>
 
 ## Software Architectuur
@@ -108,8 +114,8 @@ docker compose up
 
 ## TODO
 
-- [ ] `mvt.api` hernoemen naar `onstage.api` en alle packages mee (beter nu dan later)
+- [x] `mvt.api` hernoemen naar `onstage.api` en alle packages mee (beter nu dan later)
 - [ ] Datamodel opstellen, API afmaken volgens specs en [unit tests](https://guides.micronaut.io/latest/creating-your-first-micronaut-app-gradle-java.html) schrijven
-- [ ] Statische HTML ombouwen naar Angular componenten
+- [ ] Statische HTML ombouwen naar React componenten
 - [ ] Dan met AJX tegen REST API praten vanuit Angular front-end (of indirect via Wordpress plugin (bedrijfsspecifieke opdrachten en studenten opslaan in custum post types)).
 - [ ] En dan nog een heel aantal meer schermen en functionaliteit natuurlijk...
