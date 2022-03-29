@@ -10,7 +10,6 @@
 
 define('CUSTOM_POST_TYPE_STAGE', 'onstage_stage');
 define('CUSTOM_POST_TYPE_CV', 'onstage_open_cv');
-define('CUSTOM_POST_TYPE_COMPANY', 'onstage_open_company');
 
 // Bron: https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/
 function onstage_custom_post_type() {
@@ -67,8 +66,10 @@ function custom_excerpt_length_custom_post_types() {
 
 add_filter('excerpt_length', 'custom_excerpt_length_custom_post_types', EXCERPT_LENGTH_DEFAULT);
 
-/** Bovenstaande werkt - blijkbaar - nog niet voor posts war de gebruiker een handmatige excerpt heeft ingevoerd */
-// Bron: https://wordpress.stackexchange.com/questions/139953/excerpt-length-not-working#answer-398655
+/** Bovenstaande add_filter is - blijkbaar - nog niet voldoende voor posts waar de gebruiker een handmatige excerpt heeft ingevoerd.
+ * Dus daarom doen we onderstaand nog een apply_filters.
+ * Bron: https://wordpress.stackexchange.com/questions/139953/excerpt-length-not-working#answer-398655
+ */
 function custom_excerpt_length($excerpt) {
     if (has_excerpt()) {
         $excerpt = wp_trim_words(get_the_excerpt(), apply_filters("excerpt_length", EXCERPT_LENGTH_CUSTOM_POST_TYPES));
@@ -87,4 +88,4 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 // TODO
-// require_once '_includes/create-bedrijven-page.php';
+require_once '_includes/create-bedrijven.php';

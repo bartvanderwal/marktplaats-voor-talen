@@ -2,8 +2,8 @@
 
 ## A. How to run
 
-1. Zorg dat je Docker Desktop hebt (of download en installeert vanaf vorige link)
-2. Clone deze repository `
+1. Zorg dat je [Docker Desktop](https://www.docker.com/products/docker-desktop/) hebt voor Windows of Linux (download en installeert vanaf vorige link) of tenminste de Docker CLI (Linux)
+2. Clone deze repository `git clone https://github.com/bartvanderwal/on-stage.git`
 3. Ga naar de folder toe waarin het bestand `docker-compose.yml` staat `cd wordpress.onstage`
 4. Run Wordpress lokaal  `docker compose up`
 5. Surf in browser naar `http://localhost:8082`
@@ -14,7 +14,7 @@ De eerste keer dat je dit doet moet je lang wachten totdat alle containers gedow
 ## B. Database en config instellen via GUI
 
 1. Kies Nederlands als taal
-2. VEerdere settings maakt niet veel uit, zoals 'ontmoedig zoekmachines...' etc, want de lokale website zet je als goed is toch niet online
+2. Verdere settings maakt niet veel uit, zoals 'ontmoedig zoekmachines...' etc, want de lokale website zet je als goed is toch niet online
 3. Ga naar `plugins` en activeer de `onstage` plugin
 4. Ga naar `Weergave` en stel het `onstage` theme in als de actieve
 5. Voer een aantal `projecten` en `CV's` in, zodat de site iets heeft om weer te geven en je de lay-out kunt tunen.
@@ -54,6 +54,14 @@ OnStage ontwikkelen en deployen we met Docker, dus we hanteren een container-bas
 Voorlopig gebruiken we voor productie(achtige) deployment een Virtual Private Server (VPS) van AIM partner Argo ICT die we zelf kunnen aanmaken via een [dashboard](https://cloud.argo-ict.net/#). Op deze VPS installeren we Docker en draaien daarin in een container de OnStage WordPress site en bijbehorende MySQL database.
 
 We verbinden met de VPS vanaf eigen (ontwikkel) machine via ssh door het aanmaken van een extra [Docker context](https://docs.docker.com/engine/context/working-with-contexts/). Argo heeft een handleiding voor het aanmaken van de benodigde SSH key i.v.m. security. We gebruiken dan met Docker cli (die de onderliggende ssh verbinding gebruikt). Zie bijvoorbeeld [deze StackOverflow vraag voor info](https://stackoverflow.com/questions/63868735/docker-context-how-to-use-specific-ssh-key).
+
+### Voorbeeld aanmaken context
+
+```bash
+docker context create onstage --docker "host=ssh://root@213.190.22.24"
+```
+
+Bron: [Stackoverflow](https://stackoverflow.com/questions/63868735/docker-context-how-to-use-specific-ssh-key#answer-63874993)
 
 Dit zou moeten werken voor zowel Windows, Linux als macOS. Ik heb alleen de laatste gebruikt/getest. Hierbij speelde nog wel issue dat de gebruikte ssh-key niet zonder meer beschikbaar was na een reboot. Dit is opgelost met deze [StackExchange post](https://unix.stackexchange.com/questions/140075/ssh-add-is-not-persistent-between-reboots).
 
