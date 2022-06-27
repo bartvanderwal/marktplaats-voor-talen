@@ -43,7 +43,7 @@ Mocht je de wordpress database opnieuw willen/moeten aanmaken bij problemen of e
 docker compose down --volumes
 ```
 
-!!NB Pas op, hiermee verwijder je de data uit database, zoals afstudeeropdrachten in de wordpress database en wat wp config zoals welke plugin geactiveerd is en welk theme geselecteerd (het `onstage` theme natuurlijk). Dan moet je alle stappen uit bovenstaande lijstje dus opnieuw doen. En ook 
+!!NB Pas op met deze `--volumes` flag, hiermee verwijder je de data uit database, zoals afstudeeropdrachten in de wordpress database en wat wp config zoals welke plugin geactiveerd is en welk theme geselecteerd (het `onstage` theme natuurlijk). Dan moet je alle stappen uit bovenstaande lijstje dus opnieuw doen. Dus als je niet weet wat je doet, gebruik liever basis `docker compose down`.
 
 ## Achtegrond over deployment naar Staging omgeving via gebruik Docker
 
